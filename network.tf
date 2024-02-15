@@ -21,7 +21,6 @@ resource "vkcs_networking_router" "router" {
 resource "vkcs_networking_router_interface" "db" {
    router_id = vkcs_networking_router.router.id
    subnet_id = vkcs_networking_subnet.subnetwork.id
-   #loadbalancer_id = vkcs_lb_loadbalancer.loadbalancer.id
 }
 
 
